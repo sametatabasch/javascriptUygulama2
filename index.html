@@ -21,12 +21,12 @@
         /**
          * Sorunun cevabını bu yorumdan sonra yazınız.
          */
-        for (var i = 1; i <= 50; i++) {
-            if (i % 4 === 0 || i % 7 === 0) {
-                if (i === 4) {
-                    document.write(i);
-                } else {
-                    document.write(" - " + i);
+        for (var i = 1; i <= 50; i++) { // 1 den başlayarak 50 ye eşit olana kadar birer birer arttırarak işlemleri tekrarla
+            if (i % 4 === 0 || i % 7 === 0) {// i sayısı 4 veya 7 ile bölündüğünde 0 kalanını veriyorsa
+                if (i === 4) { // i sayısı 4 e eşit ise, yani kurala uygun ilk sayı ise 
+                    document.write(i); // i sayısını ekrana yazdır.
+                } else {// eğer kurallara uyan ilk sayı değil ise
+                    document.write(" - " + i); // önüne - işareti koyarak ekrana yazdır.
                 }
             }
         }
